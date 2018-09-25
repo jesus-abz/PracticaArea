@@ -1,0 +1,70 @@
+﻿<Window x:Class="PracticaArea.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaArea"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Áreas de Figuras Geométricas" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"></TextBlock>
+        <TextBlock Text="Rectángulo:" Grid.Column="0" Grid.Row="1"></TextBlock>
+        <TextBlock Text="Base:" Grid.Column="0" Grid.Row="2"></TextBlock>
+        <TextBlock Text="Altura:" Grid.Column="1" Grid.Row="2"></TextBlock>
+        <TextBlock Text="Área:" Grid.Column="3" Grid.Row="2"></TextBlock>
+        <TextBox Name="txtBaseRec" Grid.Column="0" Grid.Row="3"></TextBox>
+        <TextBox Name="txtAlturaRec" Grid.Column="1" Grid.Row="3"></TextBox>
+        <Button Click="btnButtonRec" Grid.Column="2" Grid.Row="3">CALCULAR</Button>
+        <TextBlock Name="txtAreaRec" Text="0.0" Grid.Column="3" Grid.Row="3"></TextBlock>
+
+        <TextBlock Text="Triángulo:" Grid.Column="0" Grid.Row="4"></TextBlock>
+        <TextBlock Text="Base:" Grid.Column="0" Grid.Row="5"></TextBlock>
+        <TextBlock Text="Altura:" Grid.Column="1" Grid.Row="5"></TextBlock>
+        <TextBlock Text="Área:" Grid.Column="3" Grid.Row="5"></TextBlock>
+        <TextBox Name="txtBaseTri" Grid.Column="0" Grid.Row="6"></TextBox>
+        <TextBox Name="txtAlturaTri" Grid.Column="1" Grid.Row="6"></TextBox>
+        <Button Click="btnButtonTri" Grid.Column="2" Grid.Row="6">CALCULAR</Button>
+        <TextBlock Name="txtAreaTri" Text="0.0" Grid.Column="3" Grid.Row="6"></TextBlock>
+
+        <TextBlock Text="Círculo:" Grid.Column="0" Grid.Row="7"></TextBlock>
+        <TextBlock Text="Radio:" Grid.Column="0" Grid.Row="8"></TextBlock>
+        <TextBlock Text="Área:" Grid.Column="3" Grid.Row="8"></TextBlock>
+        <TextBox Name="txtRadio" Grid.Column="0" Grid.Row="9"></TextBox>
+        <Button Click="btnButtonCir" Grid.Column="2" Grid.Row="9">CALCULAR</Button>
+        <TextBlock Name="txtAreaCir" Text="0.0" Grid.Column="3" Grid.Row="9"></TextBlock>
+
+        <TextBlock Text="Tracpecio:" Grid.Column="0" Grid.Row="10"></TextBlock>
+        <TextBlock Text="Base Mayor:" Grid.Column="0" Grid.Row="11"></TextBlock>
+        <TextBlock Text="Base Menor:" Grid.Column="1" Grid.Row="11"></TextBlock>
+        <TextBlock Text="Área:" Grid.Column="3" Grid.Row="11"></TextBlock>
+        <TextBox Name="txtBaseMay" Grid.Column="0" Grid.Row="12"></TextBox>
+        <TextBox Name="txtBaseMen" Grid.Column="1" Grid.Row="12"></TextBox>
+        <Button Click="btnButtonTra" Grid.Column="2" Grid.Row="12">CALCULAR</Button>
+        <TextBlock Name="txtAreaTra" Text="0.0" Grid.Column="3" Grid.Row="12"></TextBlock>
+        <TextBlock Text="Altura:" Grid.Column="0" Grid.Row="13"></TextBlock>
+        <TextBox Name="txtAlturaTra" Grid.Column="0" Grid.Row="14"></TextBox>
+    </Grid>
+</Window>
